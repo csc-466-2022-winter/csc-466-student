@@ -31,7 +31,7 @@ home = str(Path.home()) # all other paths are relative to this path. change to s
 <!-- #region slideshow={"slide_type": "subslide"} -->
 ## Fruit Classification with Naive Bayes Classifier
 
-Consider a pattern recognition problem where we want to sort fruit on an assembly line. We want all the apples to be sorted with all the apples, all the oranges with the oranges, etc. We have a variety of senor data at our displosal such as mass and width of the fruit. **How do we accomplish this and what knowledge can we extract?**
+Consider a pattern recognition problem where we want to sort fruit on an assembly line. We want all the apples to be sorted with all the apples, all the oranges with the oranges, etc. We have a variety of sensor data at our displosal such as mass and width of the fruit. **How do we accomplish this and what knowledge can we extract?**
 
 One of the first goals of any KDD or data science problem is to perform an exploratory data analysis (EDA). We will do this now. This notebook is set up for you to follow along and type as I type. 
 <!-- #endregion -->
@@ -58,7 +58,7 @@ fruits = pd.read_csv(f'{home}/csc-466-student/data/fruit_data_with_colours.csv')
 ```
 
 <!-- #region slideshow={"slide_type": "subslide"} -->
-**Terminology note:** I will often and almost from now on in this course refer to most of these columns as "features". This is standard terminology in KDD.
+**Terminology note:** I will often in this course refer to most of these columns as "features". This is standard terminology in KDD/ML/AI.
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": "subslide"} -->
@@ -105,7 +105,7 @@ While this course could be taught without leveraging Pandas and NumPy and other 
 <!-- #region slideshow={"slide_type": "subslide"} -->
 **Stop and think: Without any other information, how likely is it that a piece of fruit is a mandarin?** 
 
-${\it Prob}({\it fruit\_name}={\it mandarin}) = ?$. 
+${\it Prob}({\it fruit\_name}={\it mandarin}) = ?$ 
 
 Note: when it is convienent and non-ambiguous, we will use shorthands such as ${\it Prob}({\it fruit\_name}={\it mandarin}) = P(mandarin)$
 <!-- #endregion -->
@@ -315,6 +315,14 @@ binned_value
 ```
 
 ```python slideshow={"slide_type": "subslide"}
+# SET likelihood to {}
+# SET prior to {}
+# FOR each unique fruit in fruits['fruit_name']
+#    CALCULATE the bin widths for fruit using a total of 5 bins
+#    CALCULATE the number of fruits of type fruit with width equal to 7.2 (using the bins you just created)
+#    IF there are not any fruits with that width, set the likelihood equal to 0
+#    OTHERWISE set the likelihood of that fruit equal to the fraction of total fruits in this bin
+#    CALCULATE the prior probability of fruit
 likelihood['orange']*prior['orange']/(likelihood['orange']*prior['orange'] + 
                                       likelihood['apple']*prior['apple'] +
                                       likelihood['lemon']*prior['lemon'] +
@@ -322,7 +330,7 @@ likelihood['orange']*prior['orange']/(likelihood['orange']*prior['orange'] +
 ```
 
 <!-- #region slideshow={"slide_type": "subslide"} -->
-What is the probability this is an apple?
+What is the probability that this is an apple?
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": "subslide"}
