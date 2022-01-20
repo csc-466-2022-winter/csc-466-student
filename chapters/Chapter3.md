@@ -117,7 +117,7 @@ We won't get into all of the limitations, but a few important ones to remember a
 <!-- #endregion -->
 
 <!-- #region slideshow={"slide_type": "subslide"} -->
-### Simply things at first
+### Simple things at first
 
 Let's try to create a single neuron that will predict between an apple and an orange.
 <!-- #endregion -->
@@ -141,7 +141,7 @@ X.head()
 ```
 
 <!-- #region slideshow={"slide_type": "subslide"} -->
-#### Stop and think: How do we make a variable called t that is 1 if it is an apple, 0 otherwise?
+#### Stop and think: How do we make a variable called ``t`` that is 1 if it is an apple, 0 otherwise?
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": "subslide"}
@@ -204,7 +204,7 @@ def activation(net,threshold=0):
 <!-- #region slideshow={"slide_type": "subslide"} -->
 #### Now let's put it together!
 
-#### Stop and think: How would you use w, x, and the activation function to get a prediction?
+#### Stop and think: How would you use $w$, $x$, and the activation function to get a prediction?
 <!-- #endregion -->
 
 ```python slideshow={"slide_type": "fragment"}

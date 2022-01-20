@@ -106,7 +106,7 @@ fruits.head() # Returns the first 5 rows of the data
 # <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXS6InFwhKDWTsBsW9WcDtyubH22eDXIcrWg&usqp=CAU">
 
 # + [markdown] slideshow={"slide_type": "subslide"}
-# ### Simply things at first
+# ### Simple things at first
 #
 # Let's try to create a single neuron that will predict between an apple and an orange.
 
@@ -125,7 +125,7 @@ X = fruits2[['mass','width','height']]
 X.head()
 
 # + [markdown] slideshow={"slide_type": "subslide"}
-# #### Stop and think: How do we make a variable called t that is 1 if it is an apple, 0 otherwise?
+# #### Stop and think: How do we make a variable called ``t`` that is 1 if it is an apple, 0 otherwise?
 
 # + slideshow={"slide_type": "subslide"}
 # Your solution here
@@ -177,7 +177,7 @@ def activation(net,threshold=0):
 # + [markdown] slideshow={"slide_type": "subslide"}
 # #### Now let's put it together!
 #
-# #### Stop and think: How would you use w, x, and the activation function to get a prediction?
+# #### Stop and think: How would you use $w$, $x$, and the activation function to get a prediction?
 
 # + slideshow={"slide_type": "fragment"}
 # Your solution here
