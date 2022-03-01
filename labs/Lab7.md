@@ -106,6 +106,8 @@ mae
 #### Problem 1
 This is an open ended question that requires you to code. I have provided my own ratings for some of the movies in the dataset. What would you recommend to me based on my recommendations if you applied user-user filtering? Feel free to also change to your rankings. I ranked the top 5 movies according to the count of users who have ranked movies.
 
+##### Upload a copy of your code, output, and discussion here: https://canvas.calpoly.edu/courses/67334/assignments/477738 
+
 ```python
 data[['movieId','title']].value_counts()
 ```
@@ -131,11 +133,13 @@ ratings_reordered
 ```
 
 ```python
-### Your solution here
+### Start coding your solution here
 ```
 
 #### Problem 2
 Repeat problem 1 but recommend movies using item-item. Any difference? Which one do you think is more reasonable?
+
+##### Your solution here: https://canvas.calpoly.edu/courses/67334/assignments/477739
 
 ```python
 # Good job!
