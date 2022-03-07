@@ -23,6 +23,9 @@ jupyter:
 
 **Note:** Exercises can be autograded and count towards your lab and assignment score. Problems are graded for participation.
 
+**Video Introduction:**
+https://calpoly.zoom.us/rec/share/TNZApiQaUUNRyMrKIl8MAVEh1FCIFNUTCthC81lA1Cn-Vw2CVn3hWBd6Wtde2WXj.V_7lCBK8Yk1MXx_r?startTime=1646613203000
+
 ```python
 from pathlib import Path
 home = str(Path.home()) # all other paths are relative to this path. change to something else if this is not the case on your system
